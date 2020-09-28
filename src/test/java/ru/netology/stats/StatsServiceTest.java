@@ -9,6 +9,8 @@ class StatsServiceTest {
 
     long[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
+//    1
+
     @Test
     void shouldSum(){
         long expected = 180;
@@ -17,6 +19,8 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
 
+//    2
+
     @Test
     void shouldAverage() {
         long expected = 15;
@@ -24,6 +28,8 @@ class StatsServiceTest {
 
         assertEquals(expected, actual);
     }
+
+//    3
 
     @Test
     void maxSales() {
@@ -34,6 +40,8 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
 
+//    4
+
     @Test
     void minSales () {
         long expected = 9;
@@ -42,6 +50,8 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
 
+//    5
+
     @Test
     void monthsSalesBelowAverage () {
         long expected = 5;
@@ -49,6 +59,8 @@ class StatsServiceTest {
 
         assertEquals(expected, actual);
     }
+
+//    6
 
     @Test
     void monthsSalesAboveAverage () {
