@@ -34,7 +34,6 @@ class StatsServiceTest {
     @Test
     void maxSales() {
         long expected = 8;
-
         long actual = service.maxSales(purchases);
 
         assertEquals(expected, actual);

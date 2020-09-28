@@ -29,7 +29,7 @@ public class StatsService {
         for (long purchase : purchases) {
             count++;
             if (maxMonthSales <= purchase) {
-                maxMonthSales = (int) purchase;
+                maxMonthSales = purchase;
                 monthMaxSales = count;
             }
         }
@@ -45,7 +45,7 @@ public class StatsService {
         for (long purchase : purchases) {
             count++;
             if (minMonthSales >= purchase) {
-                minMonthSales = (int) purchase;
+                minMonthSales =  purchase;
                 monthMinSales = count;
             }
         }
